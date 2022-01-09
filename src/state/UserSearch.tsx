@@ -6,7 +6,10 @@ const users = [
   { name: 'Michael', age: 28 },
 ];
 
-type FoundUser = { name: string; age: number };
+interface FoundUser {
+  name: string;
+  age: number;
+}
 
 const UserSearch: React.FC = () => {
   const [name, setName] = useState('');
